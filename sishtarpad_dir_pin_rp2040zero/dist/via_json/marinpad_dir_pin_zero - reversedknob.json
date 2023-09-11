@@ -1,0 +1,15 @@
+{
+    "name": "Marinpad",
+    "vendorId": "0x2E8A",
+    "productId": "0x6180",
+    "keycodes": ["qmk_lighting"],
+    "menus": ["qmk_rgblight"],
+    "matrix": {"rows": 2, "cols": 4},
+    "layouts": {
+        "keymap": [
+            [{"w":0.75},"0,2","0,1",{"w":0.75},"0,0"],
+                [{"x":2.5},"1,0","1,1","1,2","1,3"]
+                
+        ]
+    }
+}
