@@ -1,5 +1,6 @@
 # NOTE
-kindly avoid from registering these `usb_pid` as the macropads will be submitted for future auto-recognition such as VIA/VIAL firmwares.
+kindly avoid from registering these `usb_pid` as the macropads will be submitted for future auto-recognition such as VIA/VIAL firmwares. These information can be found under `info.json`.
+VIA JSON file will need to match with these following pid to be detected.
 
 ## koyanpad 
 ```json 
