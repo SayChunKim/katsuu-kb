@@ -5,6 +5,9 @@
 // #include "shizukuwink.h"
 #include "tunguska.h"
 // #include "fou.h"
+// #include <qp.h>
+// #include "ereshwink.qgf.h"
+// #include "marinsmile.qgf.h"
 
 extern uint8_t is_master;
 static uint16_t oled_timer = 0;
@@ -37,14 +40,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 bool encoder_update_user(uint8_t index, bool clockwise) {
   if (index == 0) {
     if (clockwise) {
-        tap_code(dynamic_keymap_get_keycode(biton32(layer_state), 0, 0));
-    } else {
         tap_code(dynamic_keymap_get_keycode(biton32(layer_state), 0, 2));
+    } else {
+        tap_code(dynamic_keymap_get_keycode(biton32(layer_state), 0, 0));
     }
   }
   return true;
 }
 #endif
+
+// #ifdef ENCODER_MAP_ENABLE
+// const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
+//     [0] = { ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
+//     [1] = { ENCODER_CCW_CW(_______, _______) },
+//     [2] = { ENCODER_CCW_CW(_______, _______) },
+//     [3] = { ENCODER_CCW_CW(_______, _______) },
+// };
+// #endif
 
 #ifdef OLED_ENABLE
 oled_rotation_t oled_init_user(oled_rotation_t rotation) { return OLED_ROTATION_180; }

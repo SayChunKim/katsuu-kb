@@ -3,7 +3,7 @@
     "manufacturer": "katsuu",
     "processor":"RP2040",
     "bootloader":"rp2040",
-    "url": "https://github.com/SayChunKim/koyanpad",
+    "url": "https://github.com/SayChunKim/katsuu-kb/sishtarpad_dir_pin_rp2040zero",
     "maintainer": "katsuu",
     "usb": {
         "vid": "0x2E8A",
@@ -44,7 +44,7 @@
         "rotary": [
                 { "pin_a": "GP27", 
                 "pin_b": "GP26",
-                "resolution": 30
+                "resolution": 2
             }
             ]
     },
